@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:rbx1"
+            x:Class="rbx1.MainPage">
+    
+    <ContentPage.BindingContext>
+        <local:MainViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout Orientation="Vertical">
+
+        <StackLayout Orientation="Horizontal">
+
+            <Button Text="botao 1"
+                    FontSize="Medium"
+                    HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="botao 2"
+                    FontSize="Medium"
+                    HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="botao 3"
+                    FontSize="Medium"
+                    HorizontalOptions="FillAndExpand"/>
+
+        </StackLayout>
+
+        <ScrollView HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+
+            <ListView ItemsSource="{Binding Products}"
+                HasUnevenRows="True"
+                ItemTapped="ListView_OnItemTapped"
+                Margin="0,20"
+                BackgroundColor="Silver">
+
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <StackLayout Padding="20">
+
+                                <Label Text="{Binding .Name}"
+                                    TextColor="Navy"
+                                    FontSize="Medium"/>
+
+                                <StackLayout IsVisible="{Binding IsVisible}"
+                                            Orientation="Horizontal"
+                                            Margin="0,10,0,0">
+
+                                    <Button Text="Details"
+                                        BackgroundColor="DarkGreen"
+                                        TextColor="White"
+                                        VerticalOptions="CenterAndExpand"
+                                        HorizontalOptions="Center"
+                                        FontSize="Medium" />
+
+                                    <Button Text="Edit"
+                                        BackgroundColor="DodgerBlue"
+                                        TextColor="White"
+                                        VerticalOptions="CenterAndExpand"
+                                        HorizontalOptions="Center"
+                                        FontSize="Medium"/>
+
+                                    <Button Text="Delete"
+                                        BackgroundColor="DarkRed"
+                                        TextColor="White"
+                                        VerticalOptions="CenterAndExpand"
+                                        HorizontalOptions="Center" 
+                                        FontSize="Medium" />
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </ScrollView>
+
+    </StackLayout>
+    
+</ContentPage>
