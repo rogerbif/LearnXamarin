@@ -3,7 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="rbx1.GridDemoPage">
 
-    <ScrollView HorizontalOptions="FillAndExpand">
+    <StackLayout Orientation="Vertical">
+
+        <StackLayout Orientation="Horizontal">
+
+            <Button Text = "Page Grid"
+                    FontSize="Medium"
+                    TextColor="Navy"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="YellowGreen"
+                    Clicked="OnButtonClicked" />
+
+            <Button Text = "Page2"
+                    FontSize="Medium"
+                    TextColor="Navy"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="YellowGreen"
+                    Clicked="OnButtonClicked" />
+
+            <Button Text = "Page3"
+                    FontSize="Medium"
+                    TextColor="Navy"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="YellowGreen"
+                    Clicked="OnButtonClicked" />
+
+        </StackLayout>
+
+        <ScrollView HorizontalOptions="FillAndExpand">
 
         <Grid>
             <Grid.RowDefinitions>
@@ -26,26 +53,26 @@
 
             <Label Text="Teste"
                 Grid.Row="0" Grid.Column="0"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite" />
+                TextColor="Navy"
+                BackgroundColor="Silver" />
 
-            <BoxView Color="AntiqueWhite"
+                <BoxView Color="Silver"
                 HeightRequest="0"
                 Grid.Row="0" Grid.Column="1" />
 
-            <BoxView Color="AntiqueWhite"
+                <BoxView Color="Silver"
                 Grid.Row="1" Grid.Column="0" />
 
             <Label Text="Teste"
                 Grid.Row="1" Grid.Column="1"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Start"
                 VerticalTextAlignment="Start" />
 
-            <Button Text = "Me clica!"
+            <Button Text = "MainPage"
                 Grid.Row="1" Grid.Column="1"
-                TextColor="Black"
+                TextColor="Navy"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center" 
                 BackgroundColor="YellowGreen"
@@ -53,75 +80,76 @@
 
             <Label Text="Teste"
                 Grid.Row="0" Grid.Column="2" Grid.RowSpan="2"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center" />
 
             <Label Text="Teste two columns"
                 Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center" />
 
             <Label Text="Teste"
                 Grid.Row="2" Grid.Column="2"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center" />
 
             <Label Text="3"
                 Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center" />
 
             <Label Text="4"
                 Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center" />
 
             <Label Text="4"
                 Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center" />
 
             <Label Text="5"
                 Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center" />
 
             <Label Text="6"
                 Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center" />
 
             <Label Text="7"
                 Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center" />
 
             <Label Text="8"
                 Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3"
-                TextColor="Black"
-                BackgroundColor="AntiqueWhite"
+                TextColor="Navy"
+                BackgroundColor="Silver"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center" />
 
         </Grid>
 
-    </ScrollView>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

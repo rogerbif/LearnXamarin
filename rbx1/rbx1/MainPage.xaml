@@ -12,17 +12,26 @@
 
         <StackLayout Orientation="Horizontal">
 
-            <Button Text="botao 1"
+            <Button Text = "Page Grid"
                     FontSize="Medium"
-                    HorizontalOptions="FillAndExpand"/>
+                    TextColor="Navy"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="YellowGreen"
+                    Clicked="OnButtonClicked" />
 
-            <Button Text="botao 2"
+            <Button Text = "Page2"
                     FontSize="Medium"
-                    HorizontalOptions="FillAndExpand"/>
+                    TextColor="Navy"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="YellowGreen"
+                    Clicked="OnButtonClicked" />
 
-            <Button Text="botao 3"
+            <Button Text = "Page3"
                     FontSize="Medium"
-                    HorizontalOptions="FillAndExpand"/>
+                    TextColor="Navy"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="YellowGreen"
+                    Clicked="OnButtonClicked" />
 
         </StackLayout>
 
